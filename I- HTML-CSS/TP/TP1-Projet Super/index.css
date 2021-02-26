@@ -1,0 +1,122 @@
+body { font-family: Oswald; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Oswald; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Oswald; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Oswald; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Oswald; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5667px; }
+
+
+body {
+    background-image: url("https://raynaldethien.fr/Nuages/Cirrostratus-2.JPG") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    width : 750px;
+    margin: auto;
+    font-size: 14px;
+}
+
+#espace {
+    height: 100px;
+} 
+
+/* Header fixe*/
+
+.fixheader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+
+    width: 750px;
+    height: 100px;
+    margin: auto;
+    background-color: #f3e39a;
+    opacity: 0.9;
+  }
+
+.head {
+    display: flex;
+    justify-content: space-around;
+}
+
+.head nav {
+    width: 60%;
+    padding: 1em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.head nav a {
+    color: #cc770e;
+}
+
+.head nav a:hover {
+    color: black;
+    text-decoration: dashed;
+}
+
+
+
+/*Body*/
+
+main {
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+.mask { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font: size 24px;
+    color: orange;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.mask h2 { 
+    margin: 10px;
+}
+
+section img {
+    float: left;
+    width: 40%;
+    padding: 1em;
+}
+
+.textLor {
+    margin: 1em;
+    text-align: justify;
+}
+
+.valire { 
+    background-color: orange;
+    text-align: center;
+    width:15%;
+    margin-left: 80%;
+    margin-bottom: 1em;
+}
+
+.valire a{
+    color: white;
+    text-decoration: none;
+}
+
+.valire a:hover {
+    color: black;
+}
+
+li {
+    font-weight: normal; 
+}
+
+
+/* footer*/
+
+footer {
+    background: none;
+    text-align: center;
+    margin: 1em;
+}
+
+footer a {
+    color:grey;
+}

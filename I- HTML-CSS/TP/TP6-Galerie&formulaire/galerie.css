@@ -1,0 +1,104 @@
+body {
+    background-image: url("./img/bg.jpg");
+}
+
+.Jumbotron {
+    background: beige;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+main .galerie h1 {
+     color: green;
+     text-align: center;
+     margin: 1em;
+}
+main .galerie .row {
+    margin: auto;
+   }
+
+main .galerie .row img {
+    z-index: 10;
+    background-color: white;
+    padding: .1rem;
+    width: 19%;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+main .galerie .row img:hover {
+    cursor: pointer;
+    z-index: 20;
+    transform: scale(1.2, 1.2);
+    filter: blur(0);
+}
+
+.galerie .row:hover img{
+    filter: blur(1px) brightness(0.8) grayscale(1);
+}
+
+.cache {
+	display: none;
+	left: 20%;
+	width: 50%;
+}
+
+img:hover + .cache {
+	display: block;
+}
+
+
+/*Formulaire */
+
+.Formulaire {
+    background: whitesmoke;
+    border-radius: 10px;
+    padding: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.Formulaire form {
+    display: flex;
+    align-items: stretch;
+}
+
+.partun {
+    flex: 1;
+    text-align: right;
+}
+
+.partdeux {
+    flex:2;
+}
+
+.partun, .partdeux {
+    border: 1px solid black;
+    border-radius: 10px;
+    background: white;
+    margin: 1rem;
+    padding: .5rem;
+}
+
+.partdeux #comm {
+    width: 100%;
+    height: 85%;
+}
+
+
+@media all and (max-width:700px) {
+
+    main .galerie .row img {
+        height: 150px;
+    }
+
+    .Formulaire form{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .partdeux #comm {
+        height: auto;
+    }
+}

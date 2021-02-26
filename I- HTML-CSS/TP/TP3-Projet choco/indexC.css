@@ -1,0 +1,124 @@
+/* --- implant font ---*/
+
+h1, h2, h3 {
+    font-family: PT Sans Narrow;
+    font-size: 1.4em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+
+body {
+    font-family: Open Sans;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+
+/* -- */
+
+body {
+    background-color: #0a8b80;
+}
+
+h2, h3 {
+    background-color: #542519;
+    color: white;
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 1px 1px 12px black;
+}
+
+/*Header*/
+
+header {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+nav {
+    background-color: #542519;
+    font-size: 1.6em;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+    transition: background-color .6s ease;
+}
+
+nav a:hover{
+    background-color:  #a79189;
+}
+
+/*Main*/
+
+.container {
+    background-color: honeydew;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-choco {
+    border-radius: 1em;
+    box-shadow: 1px 1px 7px black;
+    object-fit: fill;
+    width: 65%;
+}
+
+section {
+    flex: 2;
+    background-color: #096058;
+    padding: 1em;
+}
+
+aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2em;
+    text-align: justify
+}
+
+/* Media query*/
+
+@media all and (min-width: 560px) and (max-width: 960px) {
+    .container {
+        background-color: honeydew;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    nav a {
+        flex: 1;
+    }
+}
+
+@media all and (max-width: 560px) {
+    aside {
+        display: none;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;    
+        justify-content: space-around;
+    }
+    nav a {
+        border: 1px solid grey;
+        padding: 1em;
+        flex: 1;
+    }
+}

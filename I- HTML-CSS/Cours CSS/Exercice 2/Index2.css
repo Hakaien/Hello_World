@@ -1,0 +1,51 @@
+body{background-color:#C6C0A0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{color: #7D775C;
+font-size: x-large;
+font-style: italic;
+font-weight: bold;
+text-align: center;
+letter-spacing: 1px; 
+}
+
+h3{color:#7D775C;
+font: larger, bold;
+letter-spacing:1px;
+}
+
+li{line-height: 12px;
+}
+
+.HT, .CSS{color:green;
+}
+
+#container{background-color: white;
+    /* Ajout d'un fond blanc non demandé*/
+    color: #555753;
+    font-size: 75%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px;
+    padding: 2%;/*Ajout*/
+
+    /*border-radius: 10px; /* ajout border-radius réclamé par VSC*/
+    /*-moz-border-radius: 10px; 
+    -webkit-border-radius: 10px; 
+    box-shadow: 8px 8px 12px #aaa; 
+    -moz-box-shadow: 8px 8px 12px #aaa; 
+    -webkit-box-shadow: 8px 8px 12px #aaa; */
+
+    /*test -pre-fixe*/
+    border-radius: 10px;
+    box-shadow: 8px 8px 12px #aaa;
+}
+
+#duree {color:red;
+font-size:larger;
+text-decoration: underline;
+}
+

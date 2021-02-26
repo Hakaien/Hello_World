@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="all" type="text/css" href="screen.css">
+    <link rel="stylesheet" media="all and (min-width: 551px) and (max-width: 781px)" type="text/css" href="tablette.css">
+    <link rel="stylesheet" media="all and (max-width:551px)" type="text/css" href="smart.css">
+    <title>Boite de Photos</title>
+</head>
+
+<body>
+
+    <div class="global">
+        <header>
+            <div id="titre"><p>Boite2Photo.fr</p>
+            <h1>La boite de Photos</h1></div>
+        </header>
+
+        <nav>
+            <!--Navigateur de catalogue-->
+            <ul>
+                <li>Catalogue 1</li>
+                <li>Catalogue 2</li>
+                <li>Catalogue 3</li>
+                <li>Catalogue 4</li>
+                <li>Catalogue 5</li>
+                <li>Catalogue 6</li>
+            </ul>
+        </nav>
+
+        <article> <div id="mini">
+            <!--Ensemble de miniature-->
+            <!--<a href="Lien ou l'on va" ><img src="imagecliquable" alt=""></a>-->
+            <a href="#"><img onclick="affiche(this);" src="img/image1.jpg" alt="comm" title="image1"></a>
+            <a href="#"><img onclick="affiche(this);" src="img/image2.jfif" alt="Comm1" title="titre1"></a>
+            <a href="#"><img onclick="affiche(this);" src="img/image3.jfif" alt="Comm1" title="titre1"></a>
+            <a href="#"><img onclick="affiche(this);" src="img/image4.jpg" alt="Comm1" title="titre1"></a>
+            <a href="#"><img onclick="affiche(this);" src="img/image5.jfif" alt="Comm1" title="titre1"></a>
+            <a href="#"><img onclick="affiche(this);" src="img/image6.jfif" alt="Comm1" title="titre1"></a>
+        </div>
+        </article>
+
+        <article><div id="maxi">
+            <!--main onglet-->
+            <aside> 
+                <h2 id="titreGrandeImage">Base</h2>
+            </aside>
+            <aside><img id="grandeImage" src="img/image3.jfif"></aside>
+            <aside>
+                    <p><div id="texteGrandeImage">Commentaire<div> </p>
+                </div>
+            </aside>
+        </article>
+
+
+    </div>
+    <!--script à trouver pour appeler l'ouverture mini<grand-->
+    <script> 
+    function affiche(elementImg)
+    {   
+        console.log(elementImg);
+        
+        var textalt = elementImg.alt;
+        var texttitle = elementImg.title;
+        var src = elementImg.src; 
+        var srcBigImg = src.substring(src.lastIndexOf('/') +1); // nom du fichier image //alert srcBigImg;
+
+        document.getElementById("grandeImage").src = src;
+        document.getElementById("titreGrandeImage").innerHTML = texttitle;
+        document.getElementBYId("texteGrandeImage").innerHTML = textalt;
+    }
+    
+    
+    </script>
+
+</body>
+
+</html>

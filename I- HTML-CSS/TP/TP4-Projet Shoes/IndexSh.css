@@ -1,0 +1,287 @@
+@font-face {
+    font-family: "fontcourgette";
+    src: url('./courgette/Courgette-Regular.ttf');
+}
+
+body {
+    font-family: "fontcourgette", 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+#corpus {
+    background-color: #f1eee7;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#slider, #select, #new, #best, #crush {
+    background-color: white;
+    box-shadow: 8px 8px 12px #aaa;
+    -moz-box-shadow: 8px 8px 12px #aaa;
+    -webkit-box-shadow: 8px 8px 12px #aaa;
+    margin: 1em;
+}
+
+a {
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.container {
+    width: 75%;
+    max-width: 1500px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* HEADER */
+
+/* ---------------*/
+
+.topbar {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: #F6D4F5;
+    width: 100%;
+    position: relative;
+}
+
+header .container {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 2%;
+}
+
+#cart {
+    position: relative;
+    float: right;
+    margin-right: 10%;
+}
+
+#logo a {
+    margin-left: 10%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: black;
+    text-align: center;
+    flex: 1;
+    padding: 1em;
+    margin-bottom: 1em;
+    transition: background-color .4s ease;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: #8B668E;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px black;
+}
+
+/* MAIN */
+
+/* ---------------*/
+
+/* ---------------*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+
+/* ------I---------*/
+
+#slider {
+    position: relative;
+    text-align: center;
+    margin-top: 2em;
+}
+
+#slider h2 {
+    position: absolute;
+    background-color: #F8D7FA;
+    margin-left: 1em;
+    padding: .6em;
+    opacity: 70%;
+    font-family: 'Georgia';
+    font-size: 1em;
+    text-align: left;
+}
+
+/* --------II-------*/
+
+#select h1 {
+    text-align: left;
+    padding: auto;
+    margin-left: 1em;
+    font-family: Georgia, serif;
+}
+@media all and (min-width: 700px) {
+    
+#select-der {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-width: 100%;
+    max-height: 100%;
+    overflow-x: scroll;
+}
+
+}
+
+.escarpin {
+    margin: 1em;
+    min-width: 20%;
+    max-height: fit-content;
+}
+
+#grandeImage {
+    border-radius: 10%;
+    box-shadow: 8px 8px 12px #aaa;
+    width: 40%;
+    height: 400px;
+}
+
+/* --------III-------*/
+
+#news {
+    display: flex;
+    justify-content: space-between;
+}
+
+#new, #best, #crush {
+    flex-grow: 0.2;
+    margin: 0%;
+    padding: 1em;
+}
+
+#new h2, #best h2, #crush h2 {
+    color: white;
+    text-align: left;
+    padding-left: .4em;
+}
+
+#new h2 {
+    background-color: pink;
+}
+
+#best h2 {
+    background-color: green;
+}
+
+#crush h2 {
+    background-color: aqua;
+}
+
+/* FOOTER*/
+
+#info {
+    background-color: #C5AEC5;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: auto;
+    margin-top: 2em;
+    padding: 2em;
+}
+
+#info article:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#bottombar {
+    background: #F6D4F5;
+    font-family: Georgia;
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+#bottombar ul {
+    list-style-type: none;
+    margin: 1em;
+}
+
+#bottombar li:hover {
+    cursor: pointer;
+    color: white;
+}
+
+/* ---------------*/
+
+/* RESPONSIVE */
+
+/* ---------------*/
+
+@media all and (max-width: 700px) {
+    /*HEADER*/
+    header #cart {
+        display: none;
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+    /* MAIN */
+    #select-der {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    main aside {
+        display: none;
+    }
+
+    #news {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: auto;
+    }
+
+    /* FOOTER */
+
+#info {
+    display: flex;
+    flex-direction: column;
+}
+
+#info article {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+#bottombar {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -1,0 +1,117 @@
+@media all { 
+
+    body { 
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: auto;
+        padding: auto;
+    }
+
+    .global {
+        display: block;
+        background-color: #C6C0A0;
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        text-align: center;
+        border: 1px solid blue;
+        padding: 1em;
+    }
+
+    nav {
+        border: 1px solid blue;
+        width: 100%;
+    }
+
+    nav ul {
+        margin: auto;
+        padding: 0em;
+        text-align: center;
+    }
+
+    nav li {
+        border: 1px solid green;
+        color:red;
+        display: inline-block;
+        width : 30%;
+        margin: auto;
+        box-shadow: 1em;
+        cursor: pointer;
+    }
+
+    nav li:active {
+        border: 1px solid yellow;
+        color:black;
+        display: inline-block;
+        width : 30%;
+        margin: auto;
+        box-shadow: 1em;
+        cursor: pointer;
+    }
+
+    #titre {
+        border: 1px solid red;
+    }
+
+    #mini {
+        float: left;
+        width: 30%;
+        border : 1px solid blue;
+        height: 45em;
+        overflow-y: auto;
+    }
+    
+    #mini img {
+        display: inline-block;
+        width: 40%;
+        max-width: 160px;
+        height: 40%;
+        border: 2px solid red;
+        margin: 4%;
+        object-fit: fill;
+    }
+
+    #mini a:hover{
+        transition: all .3s ease-in-out;
+        transform: scale(.9) rotate(-5deg);
+    }
+
+
+    #maxi {
+        float: right;
+        border: 1px solid blue;
+        width: 69%;
+        height: 45em;
+        overflow-y: auto;
+        text-align: center;
+    }
+
+    #maxi h2 {
+        text-align: center;
+        width: 36.25em;
+    }
+
+
+    #maxi img {
+        border: 10px solid red;
+        height: 36.25em;
+        width: 90%;
+    } 
+
+    #maxi aside p {
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    /*trouve ce que c'est ??*/
+    article a { max-width: 100%;
+}
+
+}

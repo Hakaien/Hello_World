@@ -1,0 +1,48 @@
+.corpus {
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    background: black;
+    color: white;
+    padding-left: 5%;
+}
+
+/*A gauche*/
+
+#entete {
+    background-color: black;
+}
+.card {
+    margin-top: 1rem;
+    padding-top: .4rem;
+}
+
+#entete img {
+    background-color: white;
+    padding: .2rem;
+    margin: auto;
+    width: 60%;
+    border-radius: 50%;
+}
+
+#entete button {
+    width:90%;
+}
+
+#entete a {
+    color: white;
+    width: 90%;
+    margin: auto;
+    margin-bottom: .4rem;
+    border-radius: 30px;
+}
+
+/* a droite*/
+
+#parcours .card{
+    background: #e1f0f6;
+    padding: 1rem;
+}
+

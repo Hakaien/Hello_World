@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="galerie.css">
+    <!--implant BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>TD6 Galerie+Formu</title>
+
+</head>
+
+
+<body>
+    <div class="container">
+
+        <head>
+            <div class="Jumbotron">
+                <h1 class="display-4">TP6 Galerie & Formulaire</h1>
+                <p class="lead page-header">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa saepe facere
+                    amet voluptatibus, ea velit
+                    molestiae, nihil modi eius veritatis tempora, eveniet fugit assumenda laudantium quos vero
+                    repellendus
+                    iste
+                    illum?</p>
+                <hr class="my-4" />
+                <h4>Essai sur un Jumbotron</h4>
+                <p>insérez bouton de recherche</p>
+            </div>
+        </head>
+
+
+        <main>
+
+            <section class="galerie">
+                <h1>Les Animaux de nos forêts</h1>
+                <div class="row justify-content-between">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/Biche.jpg" alt="">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/Blaireau.jpg" alt="">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/Cerf.jpg" alt="">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/Couleuvre.jpg" alt="">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/Ecureuil.jpg" alt="">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/Herisson.jpg" alt="">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/Lapin.jpg" alt="">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/Libellule.jpg" alt="">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/Lievre.jpg" alt="">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/Loup.jpg" alt="">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/Loutre.jpg" alt="">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/Lynx.jpg" alt="">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/Mante_Religieuse.jpg" alt="">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/Marcassin.jpg" alt="">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/Ours.jpg" alt="">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/OursAssis.jpg" alt="">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/Pieride_du_chou.jpg" alt="">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/Renard.jpg" alt="">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/Renard1.jpg" alt="">
+                    <img class="col-lg2 col-md2 col-sm2 img-responsive" src="img/Sanglier.jpg" alt="">
+                </div>
+                <img class="cache" src="img/Sanglier.jpg" alt="">
+            </section>
+
+
+            <section class="Formulaire">
+                <h1>Formulaire fluide</h1>
+                <form action="#">
+                    <div class="partun">
+                        <p>Vous :</p>
+                        <p> <label for="nom">Nom : </label> <input type="text" id="nom" autofocus> </p>
+                        <p> <label for="prenom">Prénom : </label> <input type="prenom" id="prenom"> </p>
+                        <p> <label for="email">E-mail : </label> <input type="email" id="email"> </p>
+                        <p><small>Petit texte pour simplement étendre la hauteur de ce bloc de contenu. Lorem ipsum,
+                                dolor
+                                sit amet consectetur adipisicing elit. Labore sunt aut atque ab provident et architecto
+                                in
+                                quasi. Autem, inventore ipsa assumenda repellendus qui distinctio velit porro aspernatur
+                                obcaecati quia.</small></p>
+                        <p> <input type="submit" value="Envoyer"> </p>
+                    </div>
+                    <div class="partdeux">
+                        <p><label for="comm">Commentaire</label></p> <textarea name="comm" id="comm" cols="10"
+                            rows="5">Je suis un textarea dont la hauteur se calcule par rapport au bloc de contenu à ma gauche.</textarea>
+                    </div>
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+    <!--implant BOOTSTRAP 2-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+
+
+</html>
